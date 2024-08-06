@@ -35,14 +35,18 @@ For Example -> return new Pair(minimum,maximum)
 
 class Solution {
     public Pair<Long, Long> getMinMax(int[] arr) {
-       if (arr == null || arr.length == 0) {
-            throw new IllegalArgumentException("Array must not be null or empty");
+        // Code Here
+        
+        
+        if (arr == null || arr.length == 0) {
+            return new Pair<>(null, null); // Or throw an exception if required
         }
-
-        long min = Long.MAX_VALUE;
-        long max = Long.MIN_VALUE;
-
-        for (int i = 0; i < arr.length; i++) {
+        
+       long min = arr[0];
+       long max = arr[0];
+       
+       
+        for (int i = 1; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
             }
@@ -50,7 +54,6 @@ class Solution {
                 max = arr[i];
             }
         }
-
         return new Pair<>(min, max);
     }
 }
