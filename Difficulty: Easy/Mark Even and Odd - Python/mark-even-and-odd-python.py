@@ -7,7 +7,7 @@
 #User function Template for python3
 
 def checkOddEven(x):
-    if(x % 2 == 0):
+    if(x & 1 == 0):
       # Complete the statement below
       return True
     else:
