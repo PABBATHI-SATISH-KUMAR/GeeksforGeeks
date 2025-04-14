@@ -1,34 +1,11 @@
-<h2><a href="https://www.geeksforgeeks.org/problems/factorial5739/1?category%5B%5D=Mathematical&page=3&query=category%5B%5DMathematicalpage3category%5B%5DMathematical">Factorial</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a positive integer,&nbsp;<strong>N</strong>. Find the factorial of <strong>N</strong>.</span><br>
-&nbsp;</p>
-
-<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
-
-<pre><span style="font-size:18px"><strong>Input:</strong>
-N = 5
-<strong>Output:</strong>
-120
-<strong>Explanation:</strong>
-5*4*3*2*1 = 120</span></pre>
-
-<p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
-
-<pre><span style="font-size:18px"><strong>Input:</strong>
-N = 4
-<strong>Output:</strong>
-24
-<strong>Explanation:</strong>
-4*3*2*1 = 24
-</span></pre>
-
-<p><br>
-<span style="font-size:18px"><strong>Your Task:</strong><br>
-You don't need to read input or print anything. Your task is to complete the function <strong>factorial()</strong>&nbsp;which takes&nbsp;an integer <strong>N</strong>&nbsp;as input parameters&nbsp;and returns an integer, the factorial&nbsp;of N.</span><br>
-&nbsp;</p>
-
-<p><span style="font-size:18px"><strong>Expected Time Complexity:</strong> O(N)<br>
-<strong>Expected Space Complexity:</strong> O(1)</span><br>
-&nbsp;</p>
-
-<p><span style="font-size:18px"><strong>Constraints:</strong><br>
-0 &lt;= N &lt;= 18</span></p>
-</div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Morgan Stanley</code>&nbsp;<code>Samsung</code>&nbsp;<code>FactSet</code>&nbsp;<code>MAQ Software</code>&nbsp;<code>Wipro</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Mathematical</code>&nbsp;<code>Algorithms</code>&nbsp;
+<h2><a href="https://www.geeksforgeeks.org/problems/factorial-1598335080--125944/1?&selectedLang=python3">Factorial</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an integer<strong> n</strong>, write a program to return the factorial of <strong>n</strong>. The </span><span style="font-size: 18px;">Factorial of a number is the product of all the numbers from 1 to <strong>n</strong>.</span></p>
+<p><span style="font-size: 18px;"><strong>Note:</strong> 0 factorial is equal to 1.</span></p>
+<p><span style="font-size: 18px;"><strong>Example:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 5
+<strong>Output: </strong>120
+<strong>Explanation: </strong>1 * 2 * 3 * 4 * 5 = 120</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 10
+<strong>Output: </strong>3628800
+<strong>Explanation: </strong>1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 = 3628800<br></span></pre>
+<p><strong><span style="font-size: 18px;">Constraints:</span></strong></p>
+<p><span style="font-size: 18px;">0 ≤ n ≤ 10</span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>python-loops</code>&nbsp;<code>CPP</code>&nbsp;<code>Java</code>&nbsp;
