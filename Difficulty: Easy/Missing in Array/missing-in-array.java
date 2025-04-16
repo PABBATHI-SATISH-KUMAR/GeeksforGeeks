@@ -1,49 +1,37 @@
 //{ Driver Code Starts
-// Initial Template for Java
-
 import java.io.*;
 import java.util.*;
 
-class GFG {
-
-    public static void main(String[] args) throws IOException {
+class Geeks {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int t = Integer.parseInt(br.readLine().trim());
-        while (t-- > 0) {
-            int n = Integer.parseInt(br.readLine().trim());
-            String[] str = br.readLine().trim().split(" ");
-            int[] arr = new int[n - 1];
-            for (int i = 0; i < n - 1; i++) {
+        int t = Integer.parseInt(br.readLine());
+        for (int g = 0; g < t; g++) {
+            String[] str = (br.readLine()).trim().split(" ");
+            int arr[] = new int[str.length];
+            for (int i = 0; i < str.length; i++) {
                 arr[i] = Integer.parseInt(str[i]);
             }
-            Solution sln = new Solution();
-            System.out.println(sln.missingNumber(n, arr));
+            System.out.println(new Solution().missingNumber(arr));
+            System.out.println("~");
         }
     }
 }
 // } Driver Code Ends
 
 
-// User function Template for Java
 class Solution {
+    int missingNumber(int a[]) {
+        // code here
+         int n = a.length + 1;  
+        long expectedSum = (long)n * (n + 1) / 2;
+        long actualSum = 0;
 
-    // Note that the size of the array is n-1
-    int missingNumber(int n, int arr[]) {
-
-        // Your Code Here
-        // int xor1 = 0,xor2=0;
-        // for(int i = 0;i<n-1;i++){
-        //     xor1 = xor1 ^ (i+1);
-        //     xor2 = xor2 ^ arr[i];
-        // }
-        // return xor1 ^ xor2;
-        int sum = 0;
-        for(int i = 0;i<arr.length;i++) 
-        {
-            sum=sum+arr[i];
+        for (int i = 0; i < a.length; i++) {
+            actualSum += a[i];
         }
-        int diff = n*(n+1) / 2;
-        return (diff-sum);
+
+        return (int)(expectedSum - actualSum);
+
     }
 }
